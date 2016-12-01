@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>switch</title>
+    <style>
+        body{
+            background-size: cover;
+            z-index: 1;
+        }
+        .btn-box{
+            position: absolute;
+            top: 300px;
+            left: 900px;
+
+        }
+        .btn-box button{
+            width: 240px;
+            height: 49px;
+            border-radius: 5px;
+            font-size: 28px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+<p>抱歉学姐没时间做完这个字体颜色改变的内容就这样先交了 下次修改</p>
+<div class="body">
+    <img id="img" src="image/xx.png">
+    <div class="btn-box">
+        <button id="xx"><img id="img1" src="image/btn-blue.png"></button>
+        <br/>
+        <br/>
+        <br/>
+        <button id="bw"><img id="img2" src="image/btn-gray.png"></button>
+    </div>
+</div>
+<script>
+    var btn1=document.getElementById("xx");
+    var btn2=document.getElementById("bw");
+    var img=document.getElementById("img");
+    var img1=document.getElementById("img1");
+    var img2=document.getElementById("img2")
+
+    btn1.onclick=function(){
+        img.setAttribute("src","image/xx.png");
+        img1.setAttribute("src","image/btn-blue.png")
+        img2.setAttribute("src","image/btn-gray.png")
+    }
+    btn2.onclick=function(){
+        img.setAttribute("src","image/bw.png");
+        img1.setAttribute("src","image/btn-gray.png")
+        img2.setAttribute("src","image/btn-blue.png")
+    }
+</script>
+
+
+</body>
+</html>
